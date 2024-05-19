@@ -9,7 +9,7 @@ A Product Configurator Flutter App devoloped for Evobi Automations.
 - [Notes](#notes)
 - [Download](#download)
 - [Installation](#installation)
-- [App Screenshots](#appScreenshots)
+- [App Screenshots](#app-screenshots)
 
 
 
