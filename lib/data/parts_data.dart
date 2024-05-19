@@ -12,11 +12,12 @@ final List<PartModel> parts = [
     positionDx: 0.0,
     positionDy: 0.0,
     isColored: true,
-    availableColor: ['Dark Grey', 'Silver', 'RoseGold'],
+    availableColor: ['Dark Grey', 'Silver', 'Rose Gold', 'Green'],
     colorImageUrl: [
       CustomImages.chassisDarkGreyImage,
       CustomImages.chassisSilverImage,
-      CustomImages.chassisRoseGoldImage
+      CustomImages.chassisRoseGoldImage,
+      CustomImages.chassisGreenImage
     ],
   ),
   PartModel(
@@ -94,10 +95,11 @@ final List<PartModel> parts = [
     positionDx: 0.0,
     positionDy: 0.0,
     isColored: true,
-    availableColor: ['Black', 'White'],
+    availableColor: ['Black', 'White', 'Transparent'],
     colorImageUrl: [
       CustomImages.displayBlackImage,
-      CustomImages.displayWhiteImage
+      CustomImages.displayWhiteImage,
+      CustomImages.displayTransparentImage
     ],
   ),
 ];

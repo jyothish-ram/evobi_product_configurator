@@ -9,7 +9,8 @@ A Product Configurator Flutter App devoloped for Evobi Automations.
 - [Notes](#notes)
 - [Download](#download)
 - [Installation](#installation)
-- [App Screenshots](#appScreenshots)
+- [App Screenshots](#app-screenshots)
+- [Project Structure](#project-structure)
 
 
 
@@ -19,12 +20,13 @@ This App is Iphone 6s Phone Assembler part by part Configurator devoloped using 
 
 ## Objective
 
-1. Think of any product - which can be broken into min 5 different main parts. Ex: cycle: has parts - wheel, frame, seat, handle, mudguard, side stand. Suggest you use a different product for your app, minimum 5 parts should be there.(selected product is Iphone 6s)
-2. 1st screen: A Textual product description page showing the whole product image & a "START" button. on the click of start - 2nd screen is shown
-3. 2nd screen: all parts are given as a scrollable (horizontal scroll) list on the screen with part images & names below the image in the form of a card view. Here parts can be selected for assembling. This screen is like a shopping cart. Preferred, whatever has been selected, be highlighted as selected or there is a check box for it. NOTE: The user can select all or only 3 parts out of the maximum number of parts listed there.
-4. 3rd screen: A Drag-N-Drop method to assemble the parts as images at the center of the screen to form the product. The selected parts from the 2nd screen can be kept on the left side of the screen as part images, inside a panel as a vertically scrollable view. NOTE: It is not necessary for the user to complete the entire product. Example: in cycle case, the user can only fit the wheel, frame & seat, the rest they'll not assemble. the application should still accept partial assembly
-5. 4th screen: the assembled parts done by the user, should come as is on this screen. Here the user should be able to add a colour on to the parts ( on each parts) separately. you can either give a colour pallet or give min 4 colour options to choose from by selecting the part & then applying the colour. The colour should be applicable separately to each of the parts.
-6. 5th Screen: The final product view - which the user has assembled at the 3rd screen & the colour applied at the 4th screen.
+1. Think of any product that can be broken into a minimum of 5 different main parts. Example: a cycle has parts like wheels, frame, seat, handle, mudguard, and side stand. This app focuses on the iPhone 6s.
+2. **1st screen**: A textual product description page showing the whole product image and a "START" button. On clicking start, the 2nd screen is shown.
+3. **2nd screen**: All parts are given as a scrollable (horizontal scroll) list with part images and names below the image in a card view. Parts can be selected for assembling. This screen is like a shopping cart. The selected parts are highlighted or have a checkbox. The user can select all or at least 3 parts from the list.
+4. **3rd screen**: A Drag-N-Drop method to assemble the parts at the center of the screen to form the product. The selected parts are shown on the left side in a vertically scrollable panel. The user doesn't need to complete the entire product; partial assembly is accepted.
+5. **4th screen**: The assembled parts are displayed as is. The user can add colors to each part separately, either from a color palette or from at least 4 color options. Each part's color can be applied separately.
+6. **5th screen**: The final product view shows the assembled and colored parts.
+
 
 ## Notes
 
@@ -32,20 +34,22 @@ This App is Iphone 6s Phone Assembler part by part Configurator devoloped using 
 > Selected Product is iPhone 6s
 > - Has a maximum of 7 parts (must select at least 3 parts)
 > - Has parts with color variation:
->   - Chassis [3]
->   - Display [2]
+>   - Chassis [4]
+>   - Display [3]
 
+> [!WARNING]
+> [x] Due lack of proper svg files, full color palette implementation of parts coloring wasn't completed.
 
 ## Download
 
 You can download the latest version of the APK from the [Releases](https://github.com/jyothishram/evobi_product_configurator/releases) page.
 
-![Download APK](https://github.com/jyothishram/evobi_product_configurator/releases/tag/v1.0.0)
+![Download APK](https://github.com/jyothishram/evobi_product_configurator/releases/tag/v1.0.1)
 
 ## Installation
 
 > [!TIP]
->After Installing Flutter
+> - After Installing Flutter
 > - Clone this repository
 
 ```
@@ -74,3 +78,33 @@ flutter run
 >5.Final Product Screen:
 
 ![Final Product Screen](documentation/images/screen5.png)
+
+## Project Structure
+
+```plaintext
+product_configurator/
+├── assets/
+│   ├── font/
+│   └── images/
+│       ├── model/
+│       ├── parts/  (contains parts thumbnail images)
+│       ├── partsAssembly/  (contains parts assembly images)
+│       └── partsColoredAssembly/  (contains colored parts assembly images)
+├── lib/
+│   ├── main.dart
+│   ├── data/
+│   │   ├── image_strings.dart  (contains all assets images paths and links)
+│   │   ├── parts_data.dart  (contains data about parts. modify to add new parts)
+│   │   └── text_strings.dart  (contains all text strings in the App)
+│   ├── models/
+│   │   └── (contains models like part model)
+│   ├── screens/
+│   │   └── (contains all five screens)
+│   ├── utils/
+│   └── widgets/
+└── pubspec.yaml
+```
+
+> [!TIP]
+> - You can add images for new parts in the `assets/images` directory.
+> - Modify `parts_data.dart`, `image_strings.dart` and `text_strings.dart` to include new parts.

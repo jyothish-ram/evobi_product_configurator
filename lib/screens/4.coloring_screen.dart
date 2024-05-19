@@ -102,7 +102,10 @@ class _PartColoringScreenState extends State<PartColoringScreen> {
                                       ),
                                     ),
                                   ),
-                                  Text(colorName),
+                                  Text(
+                                    colorName,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
                                 ],
                               ),
                             ),

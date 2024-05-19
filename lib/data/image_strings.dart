@@ -39,8 +39,12 @@ class CustomImages {
       "assets/images/partsColoredAssembly/iphone6s_chassis_DarkGrey.png";
   static const String chassisSilverImage =
       "assets/images/partsColoredAssembly/iphone6s_chassis_Silver.png";
+  static const String chassisGreenImage =
+      "assets/images/partsColoredAssembly/iphone6s_chassis_Green.png";
   static const String displayBlackImage =
       "assets/images/partsColoredAssembly/iphone6s_display_Black.png";
   static const String displayWhiteImage =
       "assets/images/partsColoredAssembly/iphone6s_display_White.png";
+  static const String displayTransparentImage =
+      "assets/images/partsColoredAssembly/iphone6s_display_Transparent.png";
 }

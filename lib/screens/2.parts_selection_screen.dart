@@ -105,11 +105,12 @@ class _PartsSelectionScreenState extends State<PartsSelectionScreen> {
               width: CustomDeviceUtils.getScreenWidth(context) * 0.9,
               child: ElevatedButton(
                   onPressed: () {
-                    selectedPartIds.length >= 3
+                    selectedPartIds.length == 3 ||
+                            selectedPartIds.length == productParts.length
                         ? CustomHelperFunctions.navigateToScreen(context,
                             AssemblyScreen(selectedParts: selectedParts))
-                        : CustomHelperFunctions()
-                            .showSnackBar(context, 'Select atleast 3 parts');
+                        : CustomHelperFunctions().showSnackBar(
+                            context, 'Select any 3 parts or all the parts');
                   },
                   child: const Text(CustomTexts.next)))
         ],
