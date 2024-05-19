@@ -1,4 +1,4 @@
-# product_configurator_app
+# Product Configurator App
 
 A Product Configurator Flutter App devoloped for Evobi Automations.
 
@@ -15,9 +15,9 @@ A Product Configurator Flutter App devoloped for Evobi Automations.
 
 ## Introduction
 
-This App is Iphone 6s Phone Assembler part by part Configurator.
+This App is Iphone 6s Phone Assembler part by part Configurator devoloped using flutter.
 
-##Objective
+## Objective
 
 1. Think of any product - which can be broken into min 5 different main parts. Ex: cycle: has parts - wheel, frame, seat, handle, mudguard, side stand. Suggest you use a different product for your app, minimum 5 parts should be there.(selected product is Iphone 6s)
 2. 1st screen: A Textual product description page showing the whole product image & a "START" button. on the click of start - 2nd screen is shown
@@ -26,40 +26,51 @@ This App is Iphone 6s Phone Assembler part by part Configurator.
 5. 4th screen: the assembled parts done by the user, should come as is on this screen. Here the user should be able to add a colour on to the parts ( on each parts) separately. you can either give a colour pallet or give min 4 colour options to choose from by selecting the part & then applying the colour. The colour should be applicable separately to each of the parts.
 6. 5th Screen: The final product view - which the user has assembled at the 3rd screen & the colour applied at the 4th screen.
 
-##Notes
+## Notes
 
 > [!NOTE]
->Selected Product is Iphone 6s
->Has max of 7 parts(has to select min 3parts)
->Has parts with color variation(Chassis[3], Display[2])
+> Selected Product is iPhone 6s
+> - Has a maximum of 7 parts (must select at least 3 parts)
+> - Has parts with color variation:
+>   - Chassis [3]
+>   - Display [2]
 
 
 ## Download
 
-You can download the latest version of the APK from the [Releases](https://github.com/jyothishram/your-repo-name/releases) page.
+You can download the latest version of the APK from the [Releases](https://github.com/jyothishram/evobi_product_configurator/releases) page.
 
-![Download APK](documentation/images/download.png)
+![Download APK](https://github.com/jyothishram/evobi_product_configurator/releases/tag/v1.0.0)
 
-##Installation
+## Installation
 
 > [!TIP]
 >After Installing Flutter
->Clone this repository
+> - Clone this repository
 
 ```
 cd product_configurator
 flutter run
 ```
 
-##App Screenshots
+## App Screenshots
 
-1.Start Screen:
+>1.Start Screen:
+
 ![StartScreen](documentation/images/screen1.png)
-2.Parts Selection Screen:
+
+>2.Parts Selection Screen:
+
 ![Parts Selection Screen](documentation/images/screen2.png)
-3.Parts Assembly Screen:
+
+>3.Parts Assembly Screen:
+
 ![Parts Assembly Screen](documentation/images/screen3.png)
-4.Parts Color Selection Screen:
+
+>4.Parts Color Selection Screen:
+
 ![Parts Color Selection Screen](documentation/images/screen4.png)
-5.Final Product Screen:
+
+>5.Final Product Screen:
+
 ![Final Product Screen](documentation/images/screen5.png)
